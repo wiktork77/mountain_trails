@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppMainTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/thMain_primary</item>
+        <item name="colorOnPrimary">@color/thMain_onPrimary</item>
+        <item name="colorSecondary">@color/thMain_secondary</item>
+        <item name="colorTertiary">@color/thMain_tertiary</item>
+        <item name="android:colorBackground">@color/thMain_background</item>
+        <item name="colorOnBackground">@color/thMain_onBackground</item>
+        <item name="toolbarStyle">@style/Base_mainTbStyle</item>
+    </style>
+
+    <style name="Base_mainTbStyle">
+        <item name="android:background">?colorPrimary</item>
+        <item name="titleTextAppearance">@style/mainTbTheme</item>
+        <item name="contentInsetLeft">6dp</item>
+    </style>
+
+    <style name="mainTbTheme" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="AppRedTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/thRed_primary</item>
+        <item name="colorOnPrimary">@color/thRed_onPrimary</item>
+        <item name="colorSecondary">@color/thRed_secondary</item>
+        <item name="colorTertiary">@color/thRed_tertiary</item>
+        <item name="android:colorBackground">@color/thRed_background</item>
+        <item name="colorOnBackground">@color/thRed_onBackground</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppGreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/thGreen_primary</item>
+        <item name="colorOnPrimary">@color/thGreen_onPrimary</item>
+        <item name="colorSecondary">@color/thGreen_secondary</item>
+        <item name="colorTertiary">@color/thGreen_tertiary</item>
+        <item name="android:colorBackground">@color/thGreen_background</item>
+        <item name="colorOnBackground">@color/thGreen_onBackground</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="AppBlueTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/thBlue_primary</item>
+        <item name="colorOnPrimary">@color/thBlue_onPrimary</item>
+        <item name="colorSecondary">@color/thBlue_secondary</item>
+        <item name="colorTertiary">@color/thBlue_tertiary</item>
+        <item name="android:colorBackground">@color/thBlue_background</item>
+        <item name="colorOnBackground">@color/thBlue_onBackground</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

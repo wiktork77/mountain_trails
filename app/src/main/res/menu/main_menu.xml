@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/szlak_red"
+        android:title="Szlak czerwony">
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt1_1"
+                android:title="Orla Perć" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt1_2"
+                android:title="Główny Szlak Beskidzki" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt1_3"
+                android:title="Mały Szlak Beskidzki" />
+        </menu>
+    </item>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Szlak zielony" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt2_1"
+                android:title="Beskid Śląski" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt2_2"
+                android:title="Szlak na Polanie Chochołowskiej" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt2_3"
+                android:title="Szlak na Szrenicę" />
+        </menu>
+    </item>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Szlak niebieski" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt3_1"
+                android:title="Szlak w Beskidzie Żywieckim" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt3_2"
+                android:title="Szlak na Śnieżkę" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt3_3"
+                android:title="Szlak na Czerwone Wierchy" />
+        </menu>
+    </item>
+</menu>

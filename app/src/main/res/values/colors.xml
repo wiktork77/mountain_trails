@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+
+    <!-- MAIN THEME -->
+    <color name="thMain_primary">#275dac</color>
+    <color name="thMain_onPrimary">#ffffff</color>
+    <color name="thMain_secondary">#565e71</color>
+    <color name="thMain_tertiary">#8d4380</color>
+    <color name="thMain_background">#F5F6F6</color>
+    <color name="thMain_onBackground">#1a1b1f</color>
+
+    <color name="thMain_primary_dark">#abc7ff</color>
+    <color name="thMain_onPrimary_dark">#002f66</color>
+    <color name="thMain_secondary_dark">#bec6dc</color>
+    <color name="thMain_tertiary_dark">#ffaceb</color>
+    <color name="thMain_background_dark">#1a1b1f</color>
+    <color name="thMain_onBackground_dark">#e3e2e6</color>
+
+
+    <!-- RED THEME -->
+    <color name="thRed_primary">#b71f2e</color>
+    <color name="thRed_onPrimary">#ffffff</color>
+    <color name="thRed_secondary">#775655</color>
+    <color name="thRed_tertiary">#745a2e</color>
+    <color name="thRed_background">#ffdad8</color>
+    <color name="thRed_onBackground">#ffffff</color>
+
+    <color name="thRed_primary_dark">#ffb3b0</color>
+    <color name="thRed_onPrimary_dark">#680010</color>
+    <color name="thRed_secondary_dark">#e6bdbb</color>
+    <color name="thRed_tertiary_dark">#e3c28c</color>
+    <color name="thRed_background_dark">#250505</color>
+    <color name="thRed_onBackground_dark">#ede0de</color>
+
+
+    <!-- GREEN THEME -->
+    <color name="thGreen_primary">#3c6a00</color>
+    <color name="thGreen_onPrimary">#E6E9E3</color>
+    <color name="thGreen_secondary">#775655</color>
+    <color name="thGreen_tertiary">#386664</color>
+    <color name="thGreen_background">#DDEAC4</color>
+    <color name="thGreen_onBackground">#ffffff</color>
+
+    <color name="thGreen_primary_dark">#8ddb38</color>
+    <color name="thGreen_onPrimary_dark">#1d3700</color>
+    <color name="thGreen_secondary_dark">#bfcbad</color>
+    <color name="thGreen_tertiary_dark">#a0cfcc</color>
+    <color name="thGreen_background_dark">#1b1c18</color>
+    <color name="thGreen_onBackground_dark">#e3e3db</color>
+
+
+    <!-- BLUE THEME -->
+    <color name="thBlue_primary">#00639b</color>
+    <color name="thBlue_onPrimary">#ffffff</color>
+    <color name="thBlue_secondary">#51606f</color>
+    <color name="thBlue_tertiary">#68587a</color>
+    <color name="thBlue_background">#E1E1F8</color>
+    <color name="thBlue_onBackground">#1a1c1e</color>
+
+    <color name="thBlue_primary_dark">#97cbff</color>
+    <color name="thBlue_onPrimary_dark">#003353</color>
+    <color name="thBlue_secondary_dark">#b9c8da</color>
+    <color name="thBlue_tertiary_dark">#d3bfe6</color>
+    <color name="thBlue_background_dark">#0A1015</color>
+    <color name="thBlue_onBackground_dark">#e2e2e5</color>
+
+
+
+</resources>

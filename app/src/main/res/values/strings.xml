@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="author_name">Wiktor Kubera</string>
+    <string name="day_theme">Styl dzienny</string>
+    <string name="night_theme">Styl nocny</string>
+
+
+
+
+
+
+
+
+
+    <string name="desc1_1">
+        Orla Perć to jedna z najtrudniejszych i najbardziej widowiskowych tras w polskich Tatrach. Prowadzi granią główną Tatr Zachodnich z przełęczy Zawrat na wschodzie do Kościeliskiej Przełęczy na zachodzie. Jest to trasa wymagająca doświadczenia w górskich wędrówkach, wyposażenia w sprzęt alpinistyczny oraz umiejętności poruszania się po eksponowanych partiach grani.
+    </string>
+
+
+
+    <string name="desc1_2">
+        Główny Szlak Beskidzki to jeden z najdłuższych i najważniejszych szlaków w Beskidach. Przebiega przez całe pasmo górskie, łącząc Beskid Śląski, Żywiecki, Mały i Sądecki. To znakowany szlak długodystansowy, który umożliwia przemierzanie różnych obszarów Beskidów, oferując piękne widoki i różnorodne krajobrazy.
+    </string>
+
+
+
+    <string name="desc1_3">
+        Mały Szlak Beskidzki to szlak biegnący głównie po południowej stronie Beskidów. Jest krótszy niż Główny Szlak Beskidzki, ale również oferuje piękne widoki i dostęp do urokliwych beskidzkich miejsc.
+    </string>
+
+
+
+    <string name="desc2_1">
+Szlak na Beskid Śląski to malownicza trasa, która przemierza urokliwe tereny Beskidu Śląskiego. Początkowy odcinek szlaku może prowadzić przez gęste lasy, otwierając się na przepiękne widoki górskich łąk i szczytów. W trakcie wędrówki można napotkać tradycyjne drewniane chalupy i kapliczki. Szlak ten oferuje również okazję do zanurzenia się w przyrodzie, cieszenia się świeżym powietrzem i obcowania z urokiem beskidzkich krajobrazów.
+    </string>
+
+
+
+    <string name="desc2_2">
+Ten szlak wiedzie przez urokliwe tereny Tatr Zachodnich, prowadząc do Polany Chochołowskiej – jednej z największych polan w polskich Tatrach. Trasa jest stosunkowo łagodna, co czyni ją dostępną dla różnych grup wiekowych i poziomów kondycji fizycznej. Podczas wędrówki można podziwiać bujne lasy, dzikie kwiaty górskie i przepiękne widoki na otaczające szczyty.
+    </string>
+
+
+
+    <string name="desc2_3">
+Szlak na Szrenicę to fascynująca trasa wiodąca przez malownicze tereny Karkonoszy. Wspinając się na szczyt Szrenicy, wędrowcy mogą cieszyć się przepięknymi widokami na pobliskie szczyty i doliny. Szlak ten może być różnorodny, obejmując zarówno ścieżki leśne, jak i otwarte przestrzenie skaliste. Podczas wędrówki warto zatrzymać się, by podziwiać unikalną florę i faunę charakterystyczną dla tego regionu górskiego.
+    </string>
+
+
+    <string name="desc3_1">
+Szlak w Beskidzie Żywieckim to wyjątkowa trasa, która oferuje wspaniałe doświadczenie górskie. Przebiega przez zróżnicowane tereny, obejmujące zarówno lasy, jak i otwarte łąki. W trakcie wędrówki można natrafić na tradycyjne góralskie zabudowania i cieszyć się pięknem beskidzkiej przyrody. Trasa ta może prowadzić do urokliwych szczytów, skąd rozciągają się zapierające dech w piersiach widoki na okolicę.
+    </string>
+
+
+    <string name="desc3_2">
+Szlak na Śnieżkę to wyjątkowe doświadczenie dla miłośników górskich wędrówek. Prowadzi przez malownicze tereny Karkonoszy, oferując wspaniałe widoki na okoliczne szczyty i doliny. Wspinając się na Śnieżkę, najwyższy szczyt polskich gór, wędrowcy mogą podziwiać niezwykłą przyrodę tego regionu, z jego charakterystycznymi formacjami skalnymi.
+    </string>
+
+
+    <string name="desc3_3">
+Szlak na Czerwone Wierchy to trasa w Tatrach Zachodnich, prowadząca przez malownicze grzbiety i szczyty. Wędrując tą trasą, można podziwiać przepiękne widoki na zachodnią część Tatr, a także na inne pobliskie pasma górskie. Trasa ta może być wymagająca, ale nagroda w postaci widoków z Czerwonych Wierchów z pewnością wynagrodzi trud wspinaczki.
+    </string>
+</resources>
