@@ -7,6 +7,7 @@
         <item name="android:colorBackground">@color/thMain_background</item>
         <item name="colorOnBackground">@color/thMain_onBackground</item>
         <item name="toolbarStyle">@style/Base_mainTbStyle</item>
+        <item name="android:itemBackground">@color/thMain_onPrimary</item>
     </style>
 
     <style name="Base_mainTbStyle">

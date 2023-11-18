@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/fSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="12sp" />
+        <item
+            android:id="@+id/fSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="14sp" />
+        <item
+            android:id="@+id/fSize16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="16sp" />
+        <item
+            android:id="@+id/fSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="18sp" />
+    </group>
+</menu>

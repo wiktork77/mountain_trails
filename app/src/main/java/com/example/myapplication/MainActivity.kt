@@ -1,16 +1,27 @@
 package com.example.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
+import android.util.TypedValue
+import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
-import androidx.activity.result.contract.ActivityResultContracts
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.view.menu.MenuBuilder
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.children
+import androidx.core.view.get
 
 class MainActivity : AppCompatActivity() {
+    private var fType  = Typeface.NORMAL
+    private var fSize: Int? = null
+    private var fColor: Int? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +34,29 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        when (v?.id) {
+            R.id.btnFType -> {
+                menuInflater.inflate(R.menu.font_type_menu, menu)
+                handleCtxMenuChecks(menu, ContextMenuType.TYPE)
+            }
+            R.id.btnFSize -> {
+                menuInflater.inflate(R.menu.font_size_menu, menu)
+                handleCtxMenuChecks(menu, ContextMenuType.SIZE)
+            }
+            R.id.btnFColor -> {
+                menuInflater.inflate(R.menu.font_color_menu, menu)
+                handleCtxMenuChecks(menu, ContextMenuType.COLOR)
+            }
+        }
+
+    }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var trail: Int = 0;
@@ -67,6 +101,58 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        var mode: String = ""
+        when (item.itemId) {
+            R.id.fTypeNormal -> {
+                fType = Typeface.NORMAL
+                mode = "ftype"
+            }
+            R.id.fTypeBold -> {
+                fType = Typeface.BOLD
+                mode = "ftype"
+            }
+            R.id.fTypeItalic -> {
+                fType = Typeface.ITALIC
+                mode = "ftype"
+            }
+            R.id.fSize12 -> {
+                fSize = 12
+                mode = "fsize"
+            }
+            R.id.fSize14 -> {
+                fSize = 14
+                mode = "fsize"
+            }
+            R.id.fSize16 -> {
+                fSize = 16
+                mode = "fsize"
+            }
+            R.id.fSize18 -> {
+                fSize = 18
+                mode = "fsize"
+            }
+            R.id.fColorWhite -> {
+                fColor = Color.WHITE
+                mode = "fcolor"
+            }
+            R.id.fColorBlack -> {
+                fColor = Color.BLACK
+                mode = "fcolor"
+            }
+            R.id.fColorRed -> {
+                fColor = Color.RED
+                mode = "fcolor"
+            }
+            R.id.fColorPink -> {
+                fColor = Color.MAGENTA
+                mode = "fcolor"
+            }
+        }
+        applyToAllChildren(mode)
+        return super.onContextItemSelected(item)
+    }
+
 
 
     private fun enableNightMode() {
@@ -88,15 +174,8 @@ class MainActivity : AppCompatActivity() {
         // toolbar
         setSupportActionBar(findViewById(R.id.mainToolbar))
         supportActionBar?.title = "⛰️ Szlaki górskie"
-        // buttons
-        val dayModeButton: Button = findViewById(R.id.btnDayMode)
-        val nightModeButton: Button = findViewById(R.id.btnNightMode)
-        nightModeButton.setOnClickListener { _ ->
-            enableNightMode()
-        }
-        dayModeButton.setOnClickListener { _ ->
-            disableNightMode()
-        }
+
+        bindButtons()
 
         // shared preferences
         val sp = getSharedPreferences("themePreference", MODE_PRIVATE)
@@ -111,4 +190,97 @@ class MainActivity : AppCompatActivity() {
             disableNightMode()
         }
     }
+
+    private fun bindButtons() {
+        val dayModeButton: Button = findViewById(R.id.btnDayMode)
+        val nightModeButton: Button = findViewById(R.id.btnNightMode)
+        val fTypeBtn: Button = findViewById(R.id.btnFType)
+        val fSizeBtn: Button = findViewById(R.id.btnFSize)
+        val fColor: Button = findViewById(R.id.btnFColor)
+        nightModeButton.setOnClickListener { _ ->
+            enableNightMode()
+        }
+        dayModeButton.setOnClickListener { _ ->
+            disableNightMode()
+        }
+        registerForContextMenu(fTypeBtn)
+        registerForContextMenu(fSizeBtn)
+        registerForContextMenu(fColor)
+    }
+
+
+    private fun handleCtxMenuChecks(menu: Menu?, type: ContextMenuType) {
+        var optNum: Int? = null
+        when (type) {
+            ContextMenuType.TYPE -> {
+                when(fType) {
+                    Typeface.NORMAL -> optNum = 0
+                    Typeface.BOLD -> optNum = 1
+                    Typeface.ITALIC -> optNum = 2
+                }
+
+            }
+            ContextMenuType.SIZE -> {
+                when(fSize) {
+                    12 -> optNum = 0
+                    14 -> optNum = 1
+                    16 -> optNum = 2
+                    18 -> optNum = 3
+                }
+            }
+            ContextMenuType.COLOR -> {
+                when (fColor) {
+                    Color.WHITE -> optNum = 0
+                    Color.BLACK -> optNum = 1
+                    Color.RED -> optNum = 2
+                    Color.MAGENTA -> optNum = 3
+                }
+            }
+        }
+        if (optNum != null) {
+            menu?.getItem(optNum)?.setChecked(true)
+        }
+
+    }
+
+    private fun applyToAllChildren(mode: String) {
+        val root: ViewGroup = ((findViewById<View>(android.R.id.content) as ViewGroup).getChildAt(0) as ViewGroup)
+        val layout: ViewGroup = root.get(1) as ViewGroup;
+        for (i in 0..<layout.childCount) {
+            var item: View = layout.get(i)
+            when (mode.lowercase()) {
+                "ftype" -> {
+                    if (item is TextView) {
+                        item.setTypeface(null, fType)
+                    }
+                    if (item is Button) {
+                        item.setTypeface(null, fType)
+                    }
+                }
+                "fsize" -> {
+                    if (item is TextView && item.id != R.id.tvAuthorName) {
+                        item.setTextSize(TypedValue.COMPLEX_UNIT_DIP, fSize!!.toFloat())
+                    }
+                    if (item is Button) {
+                        item.setTextSize(TypedValue.COMPLEX_UNIT_DIP, fSize!!.toFloat())
+                    }
+                }
+                "fcolor" -> {
+                    if (item is TextView) {
+                        item.setTextColor(fColor!!)
+                    }
+                    if (item is Button) {
+                        item.setTextColor(fColor!!)
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+enum class ContextMenuType {
+    TYPE,
+    SIZE,
+    COLOR
 }
